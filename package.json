@@ -1,14 +1,20 @@
 {
-  "name": "@nephrite/dev-logger",
+  "name": "nephrite-dev-logger",
   "version": "1.0.0",
   "description": "",
+  "git repository": "(https://github.com/nephriteagain/nephrite-dev-logger)",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node ./index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "dev-logger",
+    "logger",
+    "console.log",
+    "console logger"
+  ],
+  "author": "nephriteagain",
   "license": "ISC"
 }
