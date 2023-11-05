@@ -10,8 +10,9 @@ Nephrite Dev Logger is a utility library designed to simplify logging in JavaScr
 
 
 ### Installation
-
-* npm i nephrite-dev-logger
+```
+npm i nephrite-dev-logger
+```
 
 ### Usage
 
