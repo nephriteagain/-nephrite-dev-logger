@@ -1,7 +1,13 @@
 declare module 'nephrite-dev-logger' {
 
     /**
-     * @description DevLogger is a utility class designed to simplify logging in JavaScript applications based on the development environment. It allows you to log messages in a convenient and controlled manner. The class constructor takes a boolean parameter, indicating whether the environment is in development mode. During logging, you can specify messages for development and production environments. When you log a message, you can choose to display it in the development environment only, the production environment only, or both. This class helps streamline logging practices and provides flexibility to adapt logging messages based on the current environment.
+     * @description DevLogger is a utility class designed to simplify logging in JavaScript applications based on the development environment. 
+     * It allows you to log messages in a convenient and controlled manner. 
+     * The class constructor takes a boolean parameter, 
+     * indicating whether the environment is in development mode. During logging, 
+     * you can specify messages for development and production environments. When you log a message, 
+     * you can choose to display it in the development environment only, the production environment only, or both. 
+     * This class helps streamline logging practices and provides flexibility to adapt logging messages based on the current environment.
         With this class, you can ensure that your application logs relevant information while minimizing noise in different environments.
      */
     export default class DevLogger {
