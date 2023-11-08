@@ -14,6 +14,7 @@ export default class DevLogger {
      * @param {*} devLog logs thats show on development
      * @param {*} prodLog logs that shows on production NOTE: setting this value to undefined will skip this log
      * @param {boolean|undefined} showBoth show both logs during development
+     * @returns {any[]} for testing purposes
      */    
     log(devLog, prodLog, showBoth) {
         if (showBoth !== undefined && typeof showBoth !== 'boolean') {
@@ -22,21 +23,25 @@ export default class DevLogger {
         if (showBoth) {
             console.log(devLog)
             console.log(prodLog)
-            return
+            return [devLog, prodLog]
         }
         if (this.environment === true) {
             console.log(devLog)
-            return
+            return [devLog]
         }
         if (prodLog !== undefined) {
             console.log(prodLog)
+            return [prodLog]
         }
+        return []
     }
 
     /**    
      * @param {*} devLog logs thats show on development
      * @param {*} prodLog logs that shows on production NOTE: setting this value to undefined will skip this log
      * @param {boolean|undefined} showBoth show both logs during development
+     * @returns {any[]} for testing purposes
+     * 
      */  
     warn(devLog, prodLog, showBoth) {
         if (showBoth !== undefined && typeof showBoth !== 'boolean') {
@@ -44,22 +49,26 @@ export default class DevLogger {
         }
         if (showBoth) {
             console.warn(devLog)
-            console.warn(prodLog)
-            return
+            console.warn(prodLog)            
+            return [devLog, prodLog]
         }
         if (this.environment === true) {
             console.warn(devLog)
-            return
+            return [devLog]            
         }
         if (prodLog !== undefined) {
             console.warn(prodLog)
+            return [prodLog]
         }
+        return []
     }
 
     /**    
      * @param {*} devLog logs thats show on development
      * @param {*} prodLog logs that shows on production NOTE: setting this value to undefined will skip this log
      * @param {boolean|undefined} showBoth show both logs during development
+     * @returns {any[]} for testing purposes
+     * 
      */  
     error(devLog, prodLog, showBoth) {
         if (showBoth !== undefined && typeof showBoth !== 'boolean') {
@@ -68,15 +77,17 @@ export default class DevLogger {
         if (showBoth) {
             console.error(devLog)
             console.error(prodLog)
-            return
+            return [devLog, prodLog]
         }
         if (this.environment === true) {
             console.error(devLog)
-            return
+            return [devLog]
         }
         if (prodLog !== undefined) {
             console.warn(prodLog)
+            return [prodLog]
         }
+        return []
     }
 }
 

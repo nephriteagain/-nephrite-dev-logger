@@ -22,18 +22,24 @@ declare module 'nephrite-dev-logger' {
          * @param {*} devLog logs thats show on development
          * @param {*} prodLog logs that shows on production NOTE: setting this value to undefined will skip this log
          * @param {boolean|undefined} showBoth show both logs during development
+         * @returns {any[]} for testing purposes
+         * 
          */  
         log: (devLog: any, prodLog?: any, showBoth?: boolean) => void;
         /**    
          * @param {*} devLog logs thats show on development
          * @param {*} prodLog logs that shows on production NOTE: setting this value to undefined will skip this log
          * @param {boolean|undefined} showBoth show both logs during development
+         * @returns {any[]} for testing purposes
+         * 
          */ 
         warn: (devLog: any, prodLog?: any, showBoth?: boolean) => void;
         /**    
          * @param {*} devLog logs thats show on development
          * @param {*} prodLog logs that shows on production NOTE: setting this value to undefined will skip this log
          * @param {boolean|undefined} showBoth show both logs during development
+         * @returns {any[]} for testing purposes
+         * 
          */ 
         error: (devLog: any, prodLog?: any, showBoth?: boolean) => void;
     }
